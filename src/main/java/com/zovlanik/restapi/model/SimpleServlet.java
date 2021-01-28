@@ -26,5 +26,6 @@ public class SimpleServlet extends HttpServlet {
 
     public void destroy() {
 
+
     }
 }
