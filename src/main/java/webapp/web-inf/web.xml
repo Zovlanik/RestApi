@@ -10,8 +10,50 @@
         <servlet-class>com.zovlanik.restapi.model.SimpleServlet</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.ServletRequestDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.ServletResponseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.PassingParametersUsingGetMethodDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.PassingParametersUsingPostMethodDemo</servlet-class>
+    </servlet>
+
+
+
     <servlet-mapping>
         <servlet-name>SimpleServlet</servlet-name>
         <url-pattern>/SimpleServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletRequestDemo</servlet-name>
+        <url-pattern>/ServletRequestDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ServletResponseDemo</servlet-name>
+        <url-pattern>/ServletResponseDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingGetMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingGetMethodDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
+        <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
     </servlet-mapping>
 </web-app>
