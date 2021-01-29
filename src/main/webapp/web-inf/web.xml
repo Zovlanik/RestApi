@@ -30,6 +30,10 @@
         <servlet-class>com.zovlanik.restapi.model.PassingParametersUsingPostMethodDemo</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>ErrorDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.ErrorDemo</servlet-class>
+    </servlet>
 
 
     <servlet-mapping>
@@ -56,4 +60,21 @@
         <servlet-name>PassingParametersUsingPostMethodDemo</servlet-name>
         <url-pattern>/PassingParametersUsingPostMethodDemo</url-pattern>
     </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ErrorDemo</servlet-name>
+        <url-pattern>/com.zovlanik.restapi.model.ErrorDemo</url-pattern>
+    </servlet-mapping>
+
+
+    <error-page>
+        <error-code>404</error-code>
+        <location>/ErrorDemo</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.Error</exception-type>
+        <location>/ErrorDemo</location>
+    </error-page>
+
+
 </web-app>

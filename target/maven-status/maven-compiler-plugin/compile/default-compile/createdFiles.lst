@@ -1,5 +1,6 @@
 com\zovlanik\restapi\model\ServletRequestDemo.class
 com\zovlanik\restapi\model\PassingParametersUsingPostMethodDemo.class
 com\zovlanik\restapi\model\PassingParametersUsingGetMethodDemo.class
+com\zovlanik\restapi\model\ErrorDemo.class
 com\zovlanik\restapi\model\ServletResponseDemo.class
 com\zovlanik\restapi\model\SimpleServlet.class
