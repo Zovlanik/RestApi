@@ -63,7 +63,7 @@
 
     <servlet-mapping>
         <servlet-name>ErrorDemo</servlet-name>
-        <url-pattern>/com.zovlanik.restapi.model.ErrorDemo</url-pattern>
+        <url-pattern>/ErrorDemo</url-pattern>
     </servlet-mapping>
 
 
