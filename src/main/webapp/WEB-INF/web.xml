@@ -5,6 +5,32 @@
 <web-app>
     <display-name>Servlets Tutorial</display-name>
 
+
+    <filter>
+        <filter-name>FilterDemo</filter-name>
+        <filter-class>com.zovlanik.restapi.model.FilterDemo</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/FilterDemo</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>FilterDemo</filter-name>
+        <url-pattern>/ErrorDemo</url-pattern>
+    </filter-mapping>
+
+    
+    <!--Servlets-->
+    <servlet>
+        <servlet-name>CookieDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.CookieDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.SessionTrackingDemo</servlet-class>
+    </servlet>
+    
     <servlet>
         <servlet-name>SimpleServlet</servlet-name>
         <servlet-class>com.zovlanik.restapi.model.SimpleServlet</servlet-class>
@@ -34,8 +60,34 @@
         <servlet-name>ErrorDemo</servlet-name>
         <servlet-class>com.zovlanik.restapi.model.ErrorDemo</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.DatabaseDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.DateTimeDemo</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.AutoRefreshDemo</servlet-class>
+    </servlet>
 
 
+    <!--Servlet-mappings-->
+    <servlet-mapping>
+        <servlet-name>CookieDemo</servlet-name>
+        <url-pattern>/CookieDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>SessionTrackingDemo</servlet-name>
+        <url-pattern>/SessionTrackingDemo</url-pattern>
+    </servlet-mapping>
+    
+    
     <servlet-mapping>
         <servlet-name>SimpleServlet</servlet-name>
         <url-pattern>/SimpleServlet</url-pattern>
@@ -66,7 +118,23 @@
         <url-pattern>/ErrorDemo</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>DatabaseDemo</servlet-name>
+        <url-pattern>/DatabaseDemo</url-pattern>
+    </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>DateTimeDemo</servlet-name>
+        <url-pattern>/DateTimeDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AutoRefreshDemo</servlet-name>
+        <url-pattern>/AutoRefreshDemo</url-pattern>
+    </servlet-mapping>
+
+    <!--Error-page-->
+    
     <error-page>
         <error-code>404</error-code>
         <location>/ErrorDemo</location>
