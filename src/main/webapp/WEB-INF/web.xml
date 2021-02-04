@@ -75,6 +75,10 @@
         <servlet-class>com.zovlanik.restapi.model.AutoRefreshDemo</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <servlet-class>com.zovlanik.restapi.model.FileUploadDemo</servlet-class>
+    </servlet>
 
     <!--Servlet-mappings-->
     <servlet-mapping>
@@ -131,6 +135,11 @@
     <servlet-mapping>
         <servlet-name>AutoRefreshDemo</servlet-name>
         <url-pattern>/AutoRefreshDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FileUploadDemo</servlet-name>
+        <url-pattern>/FileUploadDemo</url-pattern>
     </servlet-mapping>
 
     <!--Error-page-->

@@ -1,4 +1,5 @@
 com\zovlanik\restapi\model\CookieDemo.class
+com\zovlanik\restapi\model\FileUploadDemo.class
 com\zovlanik\restapi\model\ServletRequestDemo.class
 com\zovlanik\restapi\model\PassingParametersUsingGetMethodDemo.class
 com\zovlanik\restapi\model\SessionTrackingDemo.class
